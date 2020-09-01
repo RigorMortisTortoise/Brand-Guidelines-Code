@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="186.528" height="126.552" viewBox="0 0 186.528 126.552">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 8px;
+      }
+    </style>
+  </defs>
+  <g id="design-tool-fibonacci" transform="translate(3.606 127.052) rotate(-90)">
+    <path id="Path_8" data-name="Path 8" class="cls-1" d="M6.237.75C52.575,5.1,111.061,40.465,111.061,109c0,47.919-33.337,66.389-65.2,69.551" transform="translate(11.991)"/>
+    <path id="Path_9" data-name="Path 9" class="cls-1" d="M22.232,14.446a25.994,25.994,0,0,1,8.812,5.6,19.648,19.648,0,0,1,0,28.453,17.064,17.064,0,0,1-23.544,0" transform="translate(20.71 94.55)"/>
+    <path id="Path_10" data-name="Path 10" class="cls-1" d="M16.355.75h98.793a7.9,7.9,0,0,1,7.9,7.9V170.675a7.9,7.9,0,0,1-7.9,7.9H27.1a22.6,22.6,0,0,1-22.6-22.6V12.605A11.855,11.855,0,0,1,16.355.75Z" transform="translate(0 0)"/>
+    <line id="Line_13" data-name="Line 13" class="cls-1" x1="118.552" transform="translate(4.5 108.996)"/>
+    <line id="Line_14" data-name="Line 14" class="cls-1" y2="69.582" transform="translate(57.848 108.996)"/>
+  </g>
+</svg>

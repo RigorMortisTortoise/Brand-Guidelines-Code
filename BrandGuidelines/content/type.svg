@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37.868" height="40.393" viewBox="0 0 37.868 40.393">
+  <defs>
+    <style>
+     #typeout {
+		 fill: none;
+		stroke: #0185fe;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+		stroke-width: 1px;
+		stroke-dasharray: 500;
+		stroke-dashoffset: 1000;
+		animation-play-state: paused;
+		}
+		
+		#tee {
+		fill: none;
+		stroke: #0185fe;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+		stroke-width: 1px;
+		stroke-dasharray: 500;
+		stroke-dashoffset: 1000;
+		animation-play-state: paused;
+		}
+		
+			svg:hover #typeout {
+		animation: dash 5s linear forwards infinite;
+		animation-play-state: running;
+		}
+		
+			svg:hover #tee {
+		animation: dash 5s linear forwards infinite;
+		animation-play-state: running;
+		}
+		
+		@-webkit-keyframes dash {
+		from{
+			stroke-dashoffset: 1000;
+		}
+		to{
+			stroke-dashoffset: 0;
+		}
+		}
+		
+		
+    </style>
+  </defs>
+  <g id="design-file-text" transform="translate(-0.75)">
+    <path id="typeout" stroke="#000000;" data-name="Path 3188" class="type" d="M4.537,40.393A3.79,3.79,0,0,1,.75,36.606V3.787A3.79,3.79,0,0,1,4.537,0H29.782a3.773,3.773,0,0,1,2.644,1.075l5.042,4.845a3.816,3.816,0,0,1,1.15,2.718V36.606a3.79,3.79,0,0,1-3.787,3.787Zm0-37.868A1.263,1.263,0,0,0,3.275,3.787V36.606a1.263,1.263,0,0,0,1.262,1.262H34.831a1.263,1.263,0,0,0,1.262-1.262V8.639a1.269,1.269,0,0,0-.382-.9L30.669,2.89a1.258,1.258,0,0,0-.887-.365Z"/>
+    <path id="tee" data-name="Path 3189" class="type" d="M12.037,24.147a1.262,1.262,0,0,1,0-2.525H13.3v-10.1H10.775v1.262a1.262,1.262,0,0,1-2.525,0V10.262A1.263,1.263,0,0,1,9.512,9h10.1a1.263,1.263,0,0,1,1.262,1.262v2.525a1.262,1.262,0,0,1-2.525,0V11.525H15.824v10.1h1.262a1.262,1.262,0,0,1,0,2.525Z" transform="translate(5.123 6.147)"/>
+  </g>
+</svg>

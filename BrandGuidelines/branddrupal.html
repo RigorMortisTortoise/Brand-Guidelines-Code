@@ -1,0 +1,858 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Copart Brand</title>
+<style>
+	/* VARIABLES */
+/* MAIN COLORS */
+/* SECONDARY COLORS */
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: usual, sans-serif;
+  width: 100%;
+  max-width: 100%; }
+
+h1 {
+  font-family: usual, sans-serif;
+  color: #3A4352;
+  font-size: 28px;
+  margin: 24px 0 24px 0;
+  font-weight: 700;
+  line-height: 1.6em; }
+
+h2 {
+  font-family: usual, sans-serif;
+  color: #0D5DB8;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+  line-height: 1.6em; }
+
+h3 {
+  font-family: usual, sans-serif;
+  color: #0D5DB8;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3em;
+  margin-bottom: 16px; }
+
+p {
+  font-family: Hind, sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: #ACBCCB; }
+
+a {
+  color: #0D5DB8;
+  text-decoration: none;
+  cursor: pointer; }
+
+ul {
+  font-size: 16px; }
+
+/* PAGE GRID */
+header {
+  grid-area: header;
+  display: grid;
+  width: 100%;
+  max-width: 100%;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-items: space-between;
+  height: 96px;
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 11px 4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 4px 11px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 11px 4px rgba(0, 0, 0, 0.15);
+  position: relative;
+  top: -10px; }
+
+article {
+  grid-area: content;
+  background-color: white;
+  padding: 20px; }
+
+aside {
+  grid-area: sidebar;
+  color: white;
+  position: relative;
+  top: -10px;
+  width: 20vw;
+  height: 100%;
+  min-height: 100%;
+  background-color: #0D5DB8;
+  overflow: hidden;
+  text-align: left; }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: "header  header" "sidebar content" "footer  footer"; }
+
+@media (max-width: 500px) {
+  .wrapper {
+    grid-template-columns: 4fr;
+    grid-template-areas: "header" "content" "sidebar" "footer"; } }
+.full-width {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 24px; }
+
+.type-flex {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 80%; }
+
+.type-example-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: flex-start;
+  max-width: 65%;
+  margin: auto; }
+  .type-example-flex .item-left {
+    flex: 1;
+    order: 1; }
+    .type-example-flex .item-left p {
+      margin: 0;
+      line-height: 3.1em; }
+  .type-example-flex .item-right {
+    flex: 2;
+    order: 2; }
+  .type-example-flex h1 {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: usual, sans-serif; }
+  .type-example-flex h2 {
+    color: #3A4352;
+    font-size: 24px;
+    font-family: usual, sans-serif;
+    font-weight: 600 !important; }
+  .type-example-flex h3 {
+    font-family: usual, sans-serif;
+    color: #3A4352 !important;
+    font-weight: 500;
+    font-size: 16px; }
+  .type-example-flex p {
+    font-family: hind, sans-serif;
+    font-size: 16px; }
+  .type-example-flex ul {
+    color: #3A4352; }
+  .type-example-flex li {
+    font-family: hind, sans-serif;
+    color: #687386;
+    line-height: 2em;
+    font-size: 16px; }
+  .type-example-flex .callout {
+    border-left: 4px solid #0D5DB8;
+    margin-left: 24px;
+    padding-left: 16px; }
+
+.design-system {
+  animation-play-state: paused; }
+
+.design-system:hover {
+  animation-play-state: running; }
+
+.menu-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-items: center;
+  height: 96px;
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 11px 4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 4px 11px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 11px 4px rgba(0, 0, 0, 0.15); }
+  .menu-grid h2 {
+    margin: 0;
+    font-size: 20px; }
+  .menu-grid a {
+    transition-timing-function: ease-in-out;
+    transition-duration: .2s; }
+  .menu-grid a:hover {
+    color: #0185FE; }
+  .menu-grid .social img {
+    margin: 0 8px 0 8px; }
+  .menu-grid .social a {
+    padding-right: 8px; }
+
+.links {
+  position: fixed;
+  width: 20vw;
+  height: 100%;
+  min-height: 100%;
+  background-color: #0D5DB8;
+  padding-top: 160px;
+  z-index: 3; }
+  .links h2 {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 32px; }
+  .links a {
+    color: white;
+    display: block;
+    transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    font-weight: 600; }
+  .links a:hover {
+    color: #0185FE; }
+
+.inside {
+  grid-column-start: 2;
+  position: relative;
+  padding: 40px 40px 24px 0;
+  z-index: 100;
+  overflow: hidden;
+  text-align: left; }
+  .inside h2 {
+    font-size: 18px;
+    font-weight: 400; }
+  .inside h3 {
+    color: #0185FE;
+    font-weight: 600;
+    font-size: 16px; }
+  .inside p {
+    color: #687386;
+    max-width: 85%;
+    font-weight: 300; }
+  .inside a {
+    color: #0185FE;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 100; }
+  .inside img {
+    display: block;
+    width: 35%;
+    margin: auto; }
+
+.three-image {
+  position: absolute;
+  right: 0;
+  width: 40%;
+  z-index: -1;
+  margin-top: -140px; }
+
+.home-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  background-image: url("content/guidelines-hero-1.png");
+  background-size: cover;
+  height: 500px;
+  text-align: left; }
+  .home-grid h1 {
+    color: white;
+    margin-left: 40px; }
+  .home-grid h3 {
+    color: white;
+    max-width: 700px;
+    margin-left: 40px;
+    margin-bottom: 24px;
+    font-weight: 400;
+    line-height: 1.6em; }
+  .home-grid a {
+    font-family: usual, sans-serif;
+    color: white;
+    background-color: #0185FE;
+    border-radius: 6px;
+    font-weight: 600;
+    padding: 12px 24px;
+    margin: 40px 0 0 40px;
+    transition-timing-function: ease-in-out;
+    transition-duration: .4s;
+    font-size: 16px;
+    min-width: 250px;
+    text-align: center; }
+  .home-grid a:hover {
+    background-color: white;
+    color: #0D5DB8; }
+
+.sections-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  height: 350px;
+  justify-content: center; }
+  .sections-grid div {
+    display: grid;
+    justify-content: center;
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s; }
+  .sections-grid h1 {
+    color: white;
+    text-align: center;
+    vertical-align: center;
+    margin-bottom: 16px; }
+  .sections-grid h3 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-weight: 600; }
+  .sections-grid a {
+    color: white;
+    margin: 0; }
+  .sections-grid img {
+    width: 40%;
+    margin: auto;
+    align-self: center;
+    margin-top: 24px;
+    margin-bottom: 24px; }
+  .sections-grid .brand {
+    background-color: #0185FE;
+    justify-items: center;
+    align-content: center;
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s; }
+  .sections-grid .brand:hover {
+    background-color: #0D5DB8; }
+  .sections-grid .design {
+    background-color: #0174F1;
+    justify-items: center;
+    align-content: center;
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s; }
+  .sections-grid .design:hover {
+    background-color: #0D5DB8; }
+  .sections-grid .resources {
+    background-color: #0066D5;
+    justify-items: center;
+    align-content: center;
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s; }
+  .sections-grid .resources:hover {
+    background-color: #0D5DB8; }
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2em;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  text-align: left; }
+  .highlights-grid div {
+    display: grid;
+    background-color: white;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 16px -2px rgba(0, 0, 0, 0.15);
+    padding: 24px;
+    transition-timing-function: ease-in-out;
+    transition-duration: .3s; }
+    .highlights-grid div img {
+      margin-bottom: 16px; }
+    .highlights-grid div h2 {
+      color: #3A4352;
+      font-weight: 500;
+      text-align: left; }
+    .highlights-grid div a {
+      font-weight: 700;
+      font-size: 18px; }
+    .highlights-grid div p {
+      max-width: 80%; }
+  .highlights-grid div:hover {
+    -webkit-box-shadow: 0px 0px 24px -4px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0px 0px 24px -4px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 0px 24px -4px rgba(0, 0, 0, 0.08);
+    transform: scale(1.005); }
+
+.color-swatch {
+  height: 120px;
+  width: 120px;
+  border-radius: 6px;
+  margin: 12px 12px; }
+  .color-swatch p {
+    font-size: 14px; }
+
+.color-ramps {
+  height: 100px;
+  width: 100px;
+  border-radius: 6px;
+  margin: 12px 12px; }
+
+.color-ramps-2 {
+  height: 72px;
+  width: 72px;
+  margin: 0; }
+
+.copart-blue {
+  background-color: #0D5DB8; }
+
+.accent-blue {
+  background-color: #0185FE; }
+
+.background-blue {
+  background-color: #B7DEFF; }
+
+.auction {
+  background-color: #3DB832; }
+
+.caution {
+  background-color: #F8C500; }
+
+.registration {
+  background-color: #F25800; }
+
+.typo-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: space-between; }
+  .typo-section .u-bold {
+    font-family: usual, sans-serif;
+    font-weight: 700;
+    font-style: normal; }
+  .typo-section .u-medium {
+    font-family: usual, sans-serif;
+    font-weight: 600;
+    font-style: normal; }
+  .typo-section .u-regular {
+    font-family: usual, sans-serif;
+    font-weight: 400;
+    font-style: normal; }
+  .typo-section .u-light {
+    font-family: usual, sans-serif;
+    font-weight: 300;
+    font-style: normal; }
+  .typo-section .h-bold {
+    font-family: hind, sans-serif;
+    font-weight: 700;
+    font-style: normal; }
+  .typo-section .h-medium {
+    font-family: hind, sans-serif;
+    font-weight: 500;
+    font-style: normal; }
+  .typo-section .h-regular {
+    font-family: hind, sans-serif;
+    font-weight: 400;
+    font-style: normal; }
+  .typo-section .h-light {
+    font-family: hind, sans-serif;
+    font-weight: 300;
+    font-style: normal; }
+  .typo-section h1 {
+    color: #06335C;
+    font-size: 22px; }
+  .typo-section p {
+    color: #06335C;
+    max-width: 500px; }
+  .typo-section h2 {
+    color: #06335C;
+    font-size: 22px; }
+  .typo-section .item-left {
+    order: 1;
+    width: 100%; }
+  .typo-section .item-right {
+    order: 2;
+    width: 100%; }
+  .typo-section .item-big {
+    flex: 1; }
+  .typo-section .item-small {
+    flex: 2; }
+
+.logo-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-content: center; }
+
+.logo-download {
+  flex: 1;
+  border-radius: 6px;
+  background-color: white;
+  -webkit-box-shadow: 0px 4px 11px 4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 4px 11px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 11px 4px rgba(0, 0, 0, 0.15);
+  margin: 16px;
+  height: 100%;
+  max-width: 400px; }
+  .logo-download img {
+    height: 112px;
+    width: auto;
+    margin: auto; }
+  .logo-download h2 {
+    padding-top: 24px;
+    padding-left: 24px;
+    font-weight: 500; }
+  .logo-download .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: stretch;
+    height: 48px;
+    margin-top: 24px; }
+    .logo-download .flex .view {
+      flex: 1;
+      color: white;
+      text-align: center;
+      background-color: #0185FE;
+      padding: 12px;
+      border-radius: 0 0 0 6px;
+      font-size: 16px; }
+      .logo-download .flex .view button {
+        background-color: #0185FE;
+        color: white;
+        border: none;
+        font-weight: 500; }
+    .logo-download .flex .download-btn {
+      flex: 1;
+      color: white;
+      text-align: center;
+      background-color: #0D5DB8;
+      padding: 12px;
+      border-radius: 0 0 6px 0;
+      font-size: 16px; }
+    .logo-download .flex .download-btn-full {
+      flex: 1;
+      color: white;
+      text-align: center;
+      background-color: #0D5DB8;
+      padding: 12px;
+      border-radius: 0 0 6px 6px;
+      font-size: 16px; }
+    .logo-download .flex a {
+      color: white;
+      vertical-align: middle; }
+
+.logo-content {
+  position: relative;
+  display: block;
+  background-color: #0D5DB8;
+  margin: auto; }
+
+.modal-dialog {
+  max-width: 1000px; }
+  .modal-dialog a {
+    z-index: 2000; }
+
+footer {
+  display: grid;
+  grid-area: footer;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  min-height: 400px;
+  max-height: auto;
+  justify-items: center;
+  align-items: flex-start;
+  background-color: #f4f4f4;
+  position: relative;
+  bottom: -10px;
+  z-index: 3; }
+  footer h3 {
+    color: #3A4352;
+    margin-top: 40px; }
+  footer a {
+    color: #687386;
+    transition-timing-function: ease-in-out;
+    transition-duration: .15s; }
+  footer a:hover {
+    opacity: .70; }
+
+.hidden {
+  visibility: hidden; }
+
+@media only screen and (max-width: 850px) {
+  aside {
+    display: none; }
+
+  .links {
+    display: none; }
+
+  .logo-download .flex {
+    height: auto; } }
+@media only screen and (max-width: 600px) {
+  .menu-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 500px));
+    height: 100%;
+    grid-gap: 16px; }
+
+  .social {
+    margin-bottom: 24px; }
+
+  .highlights-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 500px)); }
+
+  .sections-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 500px));
+    height: auto; }
+
+  footer {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 500px));
+    text-align: center;
+    justify-items: flex-start;
+    padding-left: 80px; }
+
+  .home-grid {
+    min-height: 600px;
+    background-position: top; }
+
+  .logo-flex {
+    flex-wrap: wrap; }
+
+  .hidden {
+    display: none; }
+
+  .wrapper {
+    overflow: hidden; } }
+@media only screen and (max-width: 420px) {
+  .home-grid h1, .home-grid h3 {
+    margin-left: 24px;
+    width: 90%; }
+
+  .inside p {
+    max-width: 95% !important;
+    width: 95% !important; }
+
+  .three-image {
+    display: none !important; }
+
+  .type-flex {
+    flex-direction: column; }
+
+  .color-swatch {
+    height: 60px;
+    width: 60px; }
+    .color-swatch p {
+      display: none; }
+
+  .color-swatch-section {
+    display: none; }
+
+  .color-ramps {
+    height: 60px;
+    width: 60px; }
+
+  .color-ramps-2 {
+    display: none; }
+
+  .type-example-flex {
+    max-width: 90%; }
+
+  .inside {
+    padding: 40px 0 24px 0; } }
+
+	
+	</style>
+</head>
+
+<body>
+	
+	<div class="wrapper">
+
+  <article>
+	<div class="inside">
+	<div id="intro">
+	<h1>Brand</h1>
+		<h2>What is a Brand?</h2>
+	<p>A brand is the set of perceptions, experiences, stories and expectations that lead people to choose one company over another. Our brand is who we are, and it is why our customers should choose Copart over the competition.<br><br>
+
+A brand is more than a logo. It is the voice we use to tell our story. It is the experience people have with Copart. Our brand identity is our company’s personality. It encompasses all the touch points and communication channels. It’s how the world recognizes and distinguishes Copart from the competition.</p>
+		
+		<h2>Why is Brand Important?</h2>
+		<p>We all play a role in strengthening our brand. By incorporating these guidelines into the materials you create and the interactions you have, you help strengthen the Copart brand. The tools are flexible enough for you to create a full range of expression for your specific audience, while still allowing our shared strengths and aspirations to shine.<br><br>
+
+Our brand identity is cohesive, which helps establish a strong brand voice that resonates with the audience to build brand awareness. Over time, that awareness and consistency build trust and keep customers coming back year after year.</p>
+		
+		<h2>In This Guide</h2>
+		<p>This brand style guide takes the heart and soul of the Copart brand - our mission, vision and values - and translates it into design. We define our brand and describe the signature design elements that set us apart in an increasingly competitive market.<br><br>
+
+Our brand guidelines are the tools we use to create our story, live up to our expectations and reinforce the experiences customers and non-customers have with Copart. This guide is the manual for looking, speaking and acting like Copart. Through consistent use across all teams and channels, these guidelines amplify the impact of our brand in an increasingly competitive industry.<br><br>
+
+Questions about this guide or how to properly use this guide can be sent to
+
+			<a href="mailto:advertising@copart.com">Advertising@Copart.com.</a></p>
+		</div>
+		
+		<div id="about-brand">
+			<h1>About the Copart Brand</h1>
+			<h2>The Copart Brand Story</h2>
+			<img src="content/copart-brand.png" class="three-image">
+			<p style="position: relative; width: 60%;">Founded in 1982 by Willis J.  Johnson, Copart is a true American success story. Johnson grew up learning about business from his father, an entrepreneur who dabbled in everything from dairy farming to running restaurants and building houses. Johnson took that entrepreneurial spirit, along with a strong work ethic and a passion for change, and started Copart with just one salvage yard in California.</p>
+			
+			<p style="width: 60%;">In 1994, he took Copart public (NASDAQ: “CPRT”), raising the money needed to expand the company across the United States and into the next millennium. With a strong focus on evolving and enhancing its auction technology, Copart has transformed from a salvage vehicle auction company into a technology company offering a global remarketing platform that links Buyers and Sellers around the world.</p>
+			
+			<p style="width: 60%;">Today, Copart’s extensive inventory is housed on more than 8,000 acres of land and includes an array of vehicles to ensure Members can find what they’re looking for, from classics and exotics, early and late model cars and trucks, to industrial vehicles and more. Copart sells over two million vehicles each year, so there’s something for everyone.</p>
+			
+			<p style="width: 80%;">Copart’s success has earned the company a place on the S&amp;P 500 and recognition on Deloitte’s “The Exceptional 100 List of Top Performing U.S. Companies.” As the premier global online vehicle auction company, Copart puts the power to bid and win in your hands.</p>
+			
+			<h2>Elevator Speech: How to tell our brand story, clearly and concisely.</h2>
+			
+			<p>Copart is an online vehicle auction platform that was founded in 1982 with a single salvage yard. Today, Copart is a publicly traded company and a global leader in its industry, with more than 200 locations across 11 countries and over 125,000 vehicles up for auction every day. With a strong focus on evolving and enhancing its auction technology, Copart has transformed from a salvage vehicle auction company into a technology company offering a global remarketing platform that links Buyers and Sellers around the world.</p>
+			
+			<img src="content/copart-mission.png" style="display: block; width: 50%; margin: auto;">
+			
+			<h2>Copart Facts</h2>
+			
+			<p>Copart was founded in 1982, with its first location in Vallejo, California.<br>
+Copart has been a publicly traded company since 1994 (NASDAQ: “CPRT”).<br>
+Copart expanded to 100 locations by 2002.<br>
+Copart opened its first international yard in Canada in 2003. <br>
+Copart launched its public website in 2008.<br>
+Copart sells more than two million vehicles each year. <br><br>
+
+Copart provides suppliers with remarketing services that expose their products to more than 80,000 Buyers in over 150 countries.<br>
+Copart has over 200 locations in the U.S., Canada, the United Kingdom and Ireland, the United Arab Emirates, Brazil, Spain, Germany and Finland.<br>
+Copart was named a Top Company on Deloitte’s “The Exceptional 100” list in 2015 and earned a place in the S&amp;P 500 in 2018.</p>
+		</div>
+		
+		<div id="logo">
+		<h1>Logo and Usage</h1>
+		<h2>The Copart Logo</h2>
+		<p>As the most recognizable brand asset, the logo is our primary brand identifier, and it must appear consistently and in every Copart communication, printed or digital. It is a key brand asset and must be respected whenever it is used.</p>
+		<p>Consisting of the Copart wordmark and the ellipsis symbol, the logo is a unique piece of artwork that has been designed specifically to symbolize Copart.</p>
+		<p>Never, under any circumstances, should the logo artwork be altered or re-created. Only use the approved files when reproducing and applying the Copart logo.</p>
+			<p>Email <a href="mailto:advertising@copart.com">Advertising@Copart.com</a> to obtain the correct logo files. In your request, include the logo color (full color or black and white), file type required and intended application (digital, paper print, stitching, video, etc.).</p>
+			
+			<img src="content/logo-usage-1.svg">
+			
+			<h2>Clear Space and Minimum Size</h2>
+			<p>The Copart logo should always be surrounded by a generous field of clear space to ensure its legibility and impact. This isolates the logo and protects it from competing with visual elements such as text and supporting graphics.</p>
+			
+			<p>As shown below, the absolute minimum amount of clear space that can surround the logo in any application is equal to the size of the “o” in the Copart wordmark.</p>
+			
+			<p>The Copart logo can be scaled to a variety of sizes. However, to ensure the logo is always legible, it should never be reproduced smaller than .5” in height.</p>
+			
+			<img src="content/logo-usage-2.svg">
+			<img src="content/logo-usage-3.svg" style="width: 20%; margin-top: 24px;">
+			
+			<h2>Logo Color Variations</h2>
+			<p>To accommodate a range of reproduction and printing requirements, two logo color variations are available for use.<br><br>
+
+Keep in mind that the full-color logo is always preferred for brand communications. However, the one-color black version should be used when color reproduction is limited. This variation is especially effective in media such as newsprint.</p>
+			<img src="content/logo-color-variations.png" style="width: 80%; margin-top: 80px; margin-bottom: 80px;">
+			<h2>Background Control</h2>
+			<p>The Copart logo should be highly legible in every application. As shown below, the logo and its variations can be positioned against a variety of backgrounds.<br><br>
+
+The full-color logo features well against white and black, as well as photographic backgrounds that provide significant contrast. The one-color variation also displays well against white and black and should be used in single-color print publications.</p>
+			
+			<img src="content/logo-background-control.png" style="width: 80%; margin-bottom: 80px; margin-top: 80px;">
+			
+			<h2>Logo Misuse</h2>
+			
+			<p>Any misuse of the logo artwork diminishes its integrity and that of the Copart brand as a whole. The examples featured here represent some common misuses that must be avoided whenever working with the logo. Remember that the Copart logo must never, under any circumstances, be altered or re-created in any way.</p>
+			
+			
+	<p>All Copart employees must use a simple, standard font (preferred: Helvetica Neue or Arial) no larger than 12 pt in all emails. Non-standard typefaces and HTML may not translate across email clients. <br><br>
+
+Images and Logos: Do not use any logos or images within the email signature, other than those automatically generated within Outlook.<br><br>
+
+Quotes: Refraining from the use of quotes or sayings is best practice for professional communications; it is important to avoid the potential confusion of external audiences assuming a particular statement represents Copart’s official slogan, ideology or brand promise.</p>
+			
+			<img src="content/logo-misuse.svg" style="width: 80%; margin-bottom: 80px; margin-top: 80px;">
+		</div>
+		
+		<div id="color-palette">
+		<h1>Primary Color Palette</h1>
+		<p>Color plays an active role in people’s lives. It attracts attention and triggers emotions. Color can influence decisions and behaviors.<br><br>
+
+Consistent use of color supports visual cohesion across our communications and leverages emotional resonance with our brand. When combined with brand-specific imagery and content, color enhances the depth and impact of our story.<br><br>
+
+The colors of the palette shown below are inspired by those found in the Copart logo. Using these colors consistently across communications and various media builds recognition for the Copart brand while contributing to a unified look and feel.<br><br>
+
+The colors of the primary palette can be used for text, color fields and backgrounds.<br><br>
+
+Under no circumstance should the color red be used in any context with the Copart brand, unless identifying another brand such as CrashedToys or National Powersport Auctions (NPA).</p>
+			
+			<img src="content/color-palette.svg" style="width: 85%;">
+			
+			<h3>PMS</h3>
+			<p>The Pantone® Matching System is a system of thousands of numbered swatches. Most corporate colors, in a logo for example, are identified with a number from this system.</p>
+			
+			<h3>CYMK</h3>
+			<p>This color model is used for print and is also referred to   as process color. It is used to describe the printing process itself. CMYK uses four colors (cyan, magenta, yellow and black) to produce an array of colors.</p>
+			
+			<h3>RGB</h3>
+			<p>This color model is used for digital and web-based color palettes, and it consists of red, green and blue. RGB is the most widely used color system. </p>
+			
+			<h3>HEX</h3>
+			<p>A hex value is an extension of the RGB color model and is used on web pages to specify colors.</p>
+		
+		</div>
+		
+		<div id="typography">
+		<h1>Typography</h1>
+			
+		<p>Consistent use of typography is a simple way to align our visual identity. Fonts set a cadence for how a communication is read and can do a lot to alleviate denseness on the most text-heavy pages. The consistent use of the selected typeface families throughout Copart applications adds greatly to a cohesive visual style.<br><br>
+
+The Helvetica Neue font family is a highly legible sans serif made up of 51 fonts, which includes nine weights in three widths. This font family was chosen for its clean lines, availability across most programs, compatibility with the Copart logo and high degree of legibility in all applications.<br><br>
+
+Because of this font’s variety of weights and styles, Helvetica Neue can be used for headlines, titles and primary messaging.</p>
+			
+			<img src="content/print-typo.svg" style="margin-top: 40px; margin-bottom: 40px; width: 45%;">
+		</div>
+		
+		<div id="email-signature">
+		<h1>Email Signature</h1>
+		<p>Because email is one of our most common and most visible forms of daily communication, it is imperative we maintain clear, consistent email identification to strengthen the Copart brand.<br><br>
+
+To ensure this consistent image, email signatures in Outlook are automatically generated to meet the brand standards below.<br><br>
+
+Refrain from editing the pre-populated signature. Additions such as inspirational quotes, other images and QR codes are not permitted.<br><br>
+
+If the information or image on your signature is incorrect, email <a href="mailto:advertising@copart.com">Advertising@Copart.com</a> for assistance.</p>
+			
+			<div class="full-width">
+			<img src="content/email-sig.svg">
+			<img src="content/sig-example.svg">
+			</div>
+			<div id="best-practices">
+	<h1>Best Practices</h1>
+			
+			<h2>Location Best Practices</h2>
+			<p>Each Copart location should have printed templates for various situations. Example: yard closures, special events, notices, etc. available at MyCopart.com &gt; Marketing &gt; Yard Marketing Tookit.<br><br>
+
+Each location should have appropriate approved marketing posters and signage. For questions about the current correct in-location merchandising, contact <a href="mailto:advertising@copart.com">Advertising@Copart.com</a>.
+
+Each location should have printed Copart collateral available at all times.<br><br>
+
+For reorders of these materials or general questions, email <a href="mailto:advertising@copart.com">Advertising@Copart.com.</a></p>
+			
+			<h2>General Best Practices</h2>
+			<p>Capitalize the C in Copart.com. <br>
+Do not use “A Bid above the Rest.” <br>
+Reach out to Marketing for banner or signage requests (excluding external building signage).<br>
+Always use a Copart-approved PowerPoint template when creating presentations available on MyCopart.com &gt; Brand Guidelines, Logos and More.<br>
+Review the full Copy Style Guide at MyCopart.com &gt; Brand Guidelines, Logos and More.</p>
+			
+			<img src="content/best-practices.svg" style="width: 80%; margin-top: 40px; margin-bottom: 80px;">
+		</div>
+		</div>
+	</div>
+		
+  </article> 
+		
+		<!-- SIDEBAR LINKS -->
+  <aside>
+	  
+	  <div class="links">
+		<h2><a href="#intro">Introduction and Purpose</a></h2>
+		<h2><a href="#about-brand">About the Copart Brand</a></h2>
+		<h2><a href="#logo">Logo and Usage</a></h2>
+		<h2><a href="#color-palette">Color Palette</a></h2>
+		<h2><a href="#typography">Typography</a></h2>
+		<h2><a href="#email-signature">Email Signature</a></h2>
+		<h2><a href="#best-practices">Best Practices</a></h2>
+		</div>
+		
+		</aside>
+
+</div>
+	
+</body>
+</html>

@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40.527" height="40.554" viewBox="0 0 40.527 40.554">
+  <defs>
+    <style>
+		
+				#feather-line{
+		 fill: none;
+        stroke: #0185fe;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+		stroke-dasharray: 160;
+		stroke-dashoffset: 1000;
+		animation-play-state: paused;
+		}
+		
+					#feather-top{
+		 fill: none;
+        stroke: #0185fe;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+		stroke-dasharray: 160;
+		stroke-dashoffset: 1000;
+		animation-play-state: paused;
+		}
+		
+					#feather-bottom{
+		 fill: none;
+        stroke: #0185fe;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+		stroke-dasharray: 160;
+		stroke-dashoffset: 1000;
+		animation-play-state: paused;
+		}
+	
+		
+						#pen-top{
+		 fill: none;
+        stroke: #0185fe;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+		stroke-dasharray: 160;
+		stroke-dashoffset: 1000;
+		animation-play-state: paused;
+		}
+		
+						#pen-clip{
+		 fill: none;
+        stroke: #0185fe;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+		stroke-dasharray: 160;
+		stroke-dashoffset: 1000;
+		animation-play-state: paused;
+		}
+		
+						#pen-bottom{
+		 fill: none;
+        stroke: #0185fe;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+		stroke-dasharray: 160;
+		stroke-dashoffset: 1000;
+		animation-play-state: paused;
+		}
+		
+						#pen-line{
+		 fill: none;
+        stroke: #0185fe;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+		stroke-dasharray: 160;
+		stroke-dashoffset: 1000;
+		animation-play-state: paused;
+		}
+		
+			svg:hover #feather-line{
+		animation: dash 5s linear forwards 1;
+		animation-play-state: running;
+		}
+		
+				svg:hover #feather-top{
+		animation: dash 5s linear forwards 1;
+		animation-play-state: running;
+		}
+		
+				svg:hover #feather-bottom{
+		animation: dash 5s linear forwards 1;
+		animation-play-state: running;
+		}
+		
+				svg:hover #pen-top{
+		animation: dash 5s linear forwards 1;
+		animation-play-state: running;
+		}
+		
+			svg:hover #pen-clip{
+		animation: dash 5s linear forwards 1;
+		animation-play-state: running;
+		}
+	
+			svg:hover #pen-bottom{
+		animation: dash 5s linear forwards 1;
+		animation-play-state: running;
+		}
+		
+			svg:hover #pen-line{
+		animation: dash 5s linear forwards 1;
+		animation-play-state: running;
+		}
+		
+	@keyframes dash {
+  from {
+    stroke-dashoffset: 822;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+		
+    </style>
+  </defs>
+  <g id="content-quill-pen" transform="translate(0.754 0.789)">
+    <line id="feather-line" data-name="Line 273" class="cls-1" x1="10.453" y1="10.453" transform="translate(27.199 27.191)"/>
+    <path id="feather-top" data-name="Path 3190" class="cls-1" d="M5.489,17.994A29.943,29.943,0,0,1,.765.873c.2,0,10.95-1.325,18.328,4.755" transform="translate(0.002)"/>
+    <path id="feather-bottom" data-name="Path 3191" class="cls-1" d="M24.018,15.758c.39,2.527.064,4.58-1.082,5.726-1.738,1.738-5.324,1.731-9.44.225" transform="translate(8.156 9.6)"/>
+    <path id="pen-top" data-name="Path 3192" class="cls-1" d="M5.148,23.946a2.459,2.459,0,0,0,0,3.478L8.626,30.9a2.459,2.459,0,0,0,3.478,0L33.844,9.155A4.919,4.919,0,1,0,26.886,2.2Z" transform="translate(2.355 0.005)"/>
+    <path id="pen-clip" data-name="Path 3193" class="cls-1" d="M24.4,5.879a4.919,4.919,0,0,1,0,6.957l-5.217,5.211" transform="translate(11.795 3.28)"/>
+    <path id="pen-bottom" data-name="Path 3194" class="cls-1" d="M9.22,18.469a3.794,3.794,0,0,0-5.324.107c-1.476,1.476-3.15,8.4-3.15,8.4s6.887-1.7,8.362-3.181a3.793,3.793,0,0,0,.111-5.324Z" transform="translate(0 10.67)"/>
+    <line id="pen-line" data-name="Line 274" class="cls-1" x1="6.957" y1="6.955" transform="translate(20.519 10.927)"/>
+  </g>
+</svg>

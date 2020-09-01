@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="148.322" height="129.612" viewBox="0 0 148.322 129.612">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 8px;
+      }
+    </style>
+  </defs>
+  <g id="programming-browser" transform="translate(3.25 1.75)">
+    <path id="Path_1" data-name="Path 1" class="cls-1" d="M10.1,123.862A9.355,9.355,0,0,1,.75,114.507V12.322A10.1,10.1,0,0,1,10.822,2.25H131.05a10.053,10.053,0,0,1,10.022,10.022V113.79A10.1,10.1,0,0,1,131,123.862Z" transform="translate(0 0)"/>
+    <line id="Line_1" data-name="Line 1" class="cls-1" x1="140.322" transform="translate(0.75 30.314)"/>
+    <path id="Path_2" data-name="Path 2" class="cls-1" d="M16.5,11.25,35.21,29.96,16.5,48.669" transform="translate(82.475 47.129)"/>
+    <path id="Path_3" data-name="Path 3" class="cls-1" d="M23.21,11.25,4.5,29.96l18.71,18.71" transform="translate(19.637 47.129)"/>
+    <line id="Line_2" data-name="Line 2" class="cls-1" x1="18.71" y2="37.419" transform="translate(61.556 58.379)"/>
+  </g>
+</svg>

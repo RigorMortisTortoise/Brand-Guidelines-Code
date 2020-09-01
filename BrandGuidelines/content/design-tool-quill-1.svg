@@ -1,0 +1,85 @@
+<svg class="quill" xmlns="http://www.w3.org/2000/svg" width="43.921" height="43.917" viewBox="0 0 43.921 43.917">
+  <defs>
+    <style>
+    	
+		#outside {
+		 fill: none;
+        stroke: #0185fe;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+		stroke-dasharray: 160;
+		stroke-dashoffset: 1000;
+		animation-play-state: paused;
+		}
+		
+			#centerline{
+		 fill: none;
+        stroke: #0185fe;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+		stroke-dasharray: 160;
+		stroke-dashoffset: 1000;
+		animation-play-state: paused;
+		}
+		
+			#dashOne{
+		 fill: none;
+        stroke: #0185fe;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+		stroke-dasharray: 160;
+		stroke-dashoffset: 1000;
+		animation-play-state: paused;
+		}
+		
+			#dashTwo{
+		 fill: none;
+        stroke: #0185fe;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+		stroke-dasharray: 160;
+		stroke-dashoffset: 1000;
+		animation-play-state: paused;
+		}
+		
+		svg:hover #outside {
+		animation: dash 5s linear forwards 1;
+		animation-play-state: running;
+		}
+		
+		svg:hover #centerline {
+		animation: dash 5s linear forwards 1;
+		animation-play-state: running;
+		}
+		
+		svg:hover #dashOne {
+		animation: dash 5s linear forwards 1;
+		animation-play-state: running;
+		}
+		
+		svg:hover #dashTwo {
+		animation: dash 5s linear forwards 1;
+		animation-play-state: running;
+		}
+	
+	@keyframes dash {
+  from {
+    stroke-dashoffset: 822;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+    </style>
+  </defs>
+  <g id="design-tool-quill-1" transform="translate(1.371 0.745)">
+    <line id="centerline" data-name="Line 261" class="cls-1" x1="37.267" y2="37.267" transform="translate(0.75 3.784)"/>
+    <line id="dashOne" data-name="Line 262" class="cls-1" x1="6.418" y1="0.917" transform="translate(21.515 27.62)"/>
+    <line id="dashTwo" data-name="Line 263" class="cls-1" x1="6.417" y1="0.917" transform="translate(27.016 22.118)"/>
+    <path id="outside" data-name="Path 3168" class="cls-2" d="M6.067,18.659a7.785,7.785,0,0,0-2.259,6.019L4.49,34.907l10.229.682a7.785,7.785,0,0,0,6.019-2.261L35.606,18.461A10.372,10.372,0,1,0,20.938,3.793Z" transform="translate(2.406 0)"/>
+  </g>
+</svg>
