@@ -1,8 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Copart Brand</title>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <style>
 	/* VARIABLES */
 /* MAIN COLORS */
@@ -43,7 +45,7 @@ p {
   font-family: Hind, sans-serif;
   font-size: 16px;
   line-height: 1.6em;
-  color: #ACBCCB; }
+  color: #687386; }
 
 a {
   color: #0D5DB8;
@@ -101,8 +103,7 @@ aside {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 100%;
-  margin-bottom: 24px; }
+  max-width: 100%; }
 
 .type-flex {
   display: flex;
@@ -117,7 +118,8 @@ aside {
   align-items: baseline;
   justify-content: flex-start;
   max-width: 65%;
-  margin: auto; }
+  margin: auto;
+  margin-top: 80px; }
   .type-example-flex .item-left {
     flex: 1;
     order: 1; }
@@ -130,24 +132,24 @@ aside {
   .type-example-flex h1 {
     font-size: 32px;
     font-weight: 700;
-    font-family: usual, sans-serif; }
+    font-family: Open-sans, sans-serif; }
   .type-example-flex h2 {
     color: #3A4352;
     font-size: 24px;
-    font-family: usual, sans-serif;
+    font-family: Open-sans, sans-serif;
     font-weight: 600 !important; }
   .type-example-flex h3 {
-    font-family: usual, sans-serif;
+    font-family: Open-sans, sans-serif;
     color: #3A4352 !important;
     font-weight: 500;
     font-size: 16px; }
   .type-example-flex p {
-    font-family: hind, sans-serif;
+    font-family: Open-sans, sans-serif;
     font-size: 16px; }
   .type-example-flex ul {
     color: #3A4352; }
   .type-example-flex li {
-    font-family: hind, sans-serif;
+    font-family: Open-sans, sans-serif;
     color: #687386;
     line-height: 2em;
     font-size: 16px; }
@@ -225,7 +227,8 @@ aside {
   .inside p {
     color: #687386;
     max-width: 85%;
-    font-weight: 300; }
+    font-weight: 300;
+    margin: 0; }
   .inside a {
     color: #0185FE;
     font-weight: 600;
@@ -247,7 +250,7 @@ aside {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
-  background-image: url("content/guidelines-hero-1.png");
+  background-image: url("https://design.copart.com/content/guidelines-hero-1.png");
   background-size: cover;
   height: 500px;
   text-align: left; }
@@ -377,6 +380,18 @@ aside {
   .color-swatch p {
     font-size: 14px; }
 
+.color-ramp-name {
+  width: 112px;
+  margin-left: 12px; }
+  .color-ramp-name p {
+    font-size: 14px; }
+
+.color-ramp-name-two {
+  width: 72px;
+  margin-left: 8px; }
+  .color-ramp-name-two p {
+    font-size: 14px; }
+
 .color-ramps {
   height: 100px;
   width: 100px;
@@ -384,8 +399,8 @@ aside {
   margin: 12px 12px; }
 
 .color-ramps-2 {
-  height: 72px;
-  width: 72px;
+  height: 80px;
+  width: 80px;
   margin: 0; }
 
 .copart-blue {
@@ -398,13 +413,13 @@ aside {
   background-color: #B7DEFF; }
 
 .auction {
-  background-color: #3DB832; }
+  background-color: #18860E; }
 
 .caution {
-  background-color: #F8C500; }
+  background-color: #F2BB05; }
 
 .registration {
-  background-color: #F25800; }
+  background-color: #CC5A00; }
 
 .typo-section {
   display: flex;
@@ -414,19 +429,19 @@ aside {
   align-items: flex-end;
   justify-content: space-between; }
   .typo-section .u-bold {
-    font-family: usual, sans-serif;
+    font-family: Open-sans, sans-serif;
     font-weight: 700;
     font-style: normal; }
   .typo-section .u-medium {
-    font-family: usual, sans-serif;
+    font-family: Open-sans, sans-serif;
     font-weight: 600;
     font-style: normal; }
   .typo-section .u-regular {
-    font-family: usual, sans-serif;
+    font-family: Open-sans, sans-serif;
     font-weight: 400;
     font-style: normal; }
   .typo-section .u-light {
-    font-family: usual, sans-serif;
+    font-family: Open-sans, sans-serif;
     font-weight: 300;
     font-style: normal; }
   .typo-section .h-bold {
@@ -468,7 +483,7 @@ aside {
 .logo-flex {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: start;
   align-content: center; }
 
@@ -481,7 +496,8 @@ aside {
   box-shadow: 0px 4px 11px 4px rgba(0, 0, 0, 0.15);
   margin: 16px;
   height: 100%;
-  max-width: 400px; }
+  max-width: 300px;
+  min-width: 300px; }
   .logo-download img {
     height: 112px;
     width: auto;
@@ -504,12 +520,17 @@ aside {
       background-color: #0185FE;
       padding: 12px;
       border-radius: 0 0 0 6px;
-      font-size: 16px; }
+      font-size: 16px;
+      transition-timing-function: ease-in-out;
+      transition-duration: .3s;
+      text-decoration: none; }
       .logo-download .flex .view button {
         background-color: #0185FE;
         color: white;
         border: none;
         font-weight: 500; }
+    .logo-download .flex .view:hover {
+      background-color: #4EAAFF; }
     .logo-download .flex .download-btn {
       flex: 1;
       color: white;
@@ -517,7 +538,12 @@ aside {
       background-color: #0D5DB8;
       padding: 12px;
       border-radius: 0 0 6px 0;
-      font-size: 16px; }
+      font-size: 16px;
+      text-decoration: none;
+      transition-timing-function: ease-in-out;
+      transition-duration: .3s; }
+    .logo-download .flex .download-btn:hover {
+      background-color: #0185FE; }
     .logo-download .flex .download-btn-full {
       flex: 1;
       color: white;
@@ -525,10 +551,38 @@ aside {
       background-color: #0D5DB8;
       padding: 12px;
       border-radius: 0 0 6px 6px;
-      font-size: 16px; }
+      font-size: 16px;
+      text-decoration: none;
+      transition-timing-function: ease-in-out;
+      transition-duration: .3s; }
+    .logo-download .flex .download-btn-full:hover {
+      background-color: #0185FE; }
     .logo-download .flex a {
       color: white;
-      vertical-align: middle; }
+      vertical-align: middle;
+      text-decoration: none; }
+
+#banner-sizes .flex {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px;
+  max-width: 800px;
+  width: 800px;
+  height: 40px;
+  border: 2px solid #ACBCCB;
+  border-radius: 6px; }
+  #banner-sizes .flex p {
+    min-width: 160px;
+    text-align: center; }
+#banner-sizes .label {
+  text-align: left; }
+#banner-sizes h1 {
+  text-align: left; }
+
+#web-logos {
+  text-align: left; }
 
 .logo-content {
   position: relative;
@@ -592,6 +646,11 @@ footer {
     grid-template-columns: repeat(auto-fill, minmax(250px, 500px));
     height: auto; }
 
+  #banner-sizes .flex {
+    flex-direction: column;
+    width: auto;
+    height: auto; }
+
   footer {
     grid-template-columns: repeat(auto-fill, minmax(250px, 500px));
     text-align: center;
@@ -603,7 +662,9 @@ footer {
     background-position: top; }
 
   .logo-flex {
-    flex-wrap: wrap; }
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start; }
 
   .hidden {
     display: none; }
@@ -647,7 +708,6 @@ footer {
   .inside {
     padding: 40px 0 24px 0; } }
 
-	
 	</style>
 </head>
 
@@ -682,20 +742,20 @@ Questions about this guide or how to properly use this guide can be sent to
 		<div id="about-brand">
 			<h1>About the Copart Brand</h1>
 			<h2>The Copart Brand Story</h2>
-			<img src="content/copart-brand.png" class="three-image">
-			<p style="position: relative; width: 60%;">Founded in 1982 by Willis J.  Johnson, Copart is a true American success story. Johnson grew up learning about business from his father, an entrepreneur who dabbled in everything from dairy farming to running restaurants and building houses. Johnson took that entrepreneurial spirit, along with a strong work ethic and a passion for change, and started Copart with just one salvage yard in California.</p>
+			<img src="content/copart-brand.png" class="three-image" alt="Copart-Brand-Images" data-aos="fade-right">
+			<p style="position: relative; width: 60%;">Founded in 1982 by Willis J. Johnson, Copart is a true American success story. Johnson grew up learning about business from his father, an entrepreneur who dabbled in everything from dairy farming to running restaurants and building houses. Johnson took that entrepreneurial spirit, along with a strong work ethic and a passion for change, and started Copart with just one salvage yard in California.</p><br>
 			
-			<p style="width: 60%;">In 1994, he took Copart public (NASDAQ: “CPRT”), raising the money needed to expand the company across the United States and into the next millennium. With a strong focus on evolving and enhancing its auction technology, Copart has transformed from a salvage vehicle auction company into a technology company offering a global remarketing platform that links Buyers and Sellers around the world.</p>
+			<p style="width: 60%;">In 1994, he took Copart public (NASDAQ: “CPRT”), raising the money needed to expand the company across the United States and into the next millennium. With a strong focus on evolving and enhancing its auction technology, Copart has transformed from a salvage vehicle auction company into a technology company offering a global remarketing platform that links Buyers and Sellers around the world.</p><br>
 			
-			<p style="width: 60%;">Today, Copart’s extensive inventory is housed on more than 8,000 acres of land and includes an array of vehicles to ensure Members can find what they’re looking for, from classics and exotics, early and late model cars and trucks, to industrial vehicles and more. Copart sells over two million vehicles each year, so there’s something for everyone.</p>
+			<p style="width: 60%;">Today, Copart’s extensive inventory is housed on more than 12,000 acres of land and includes an array of vehicles to ensure Members can find what they’re looking for, from classics and exotics, early and late model cars and trucks, to industrial vehicles and more. Copart sells over two million vehicles each year, so there’s something for everyone.</p><br>
 			
-			<p style="width: 80%;">Copart’s success has earned the company a place on the S&amp;P 500 and recognition on Deloitte’s “The Exceptional 100 List of Top Performing U.S. Companies.” As the premier global online vehicle auction company, Copart puts the power to bid and win in your hands.</p>
+			<p style="width: 80%;">Copart’s success has earned the company a place on the Fortune 1000 and S&amp;P 500 list as well as recognition on Deloitte’s “The Exceptional 100 List of Top Performing U.S. Companies.” As the premier global online vehicle auction company, Copart puts the power to bid and win in your hands.</p><br>
 			
 			<h2>Elevator Speech: How to tell our brand story, clearly and concisely.</h2>
 			
-			<p>Copart is an online vehicle auction platform that was founded in 1982 with a single salvage yard. Today, Copart is a publicly traded company and a global leader in its industry, with more than 200 locations across 11 countries and over 125,000 vehicles up for auction every day. With a strong focus on evolving and enhancing its auction technology, Copart has transformed from a salvage vehicle auction company into a technology company offering a global remarketing platform that links Buyers and Sellers around the world.</p>
+			<p>Copart is a global, publicly traded, Fortune 1000 and S&P500 online vehicle auction company that uses its proprietary state-of-the-art platform to sell vehicles to buyers all around the world. The company is a global leader in its industry, with more than 200 locations across 11 countries and over 125,000 vehicles up for auction every day. With a strong focus on evolving and enhancing its auction technology, Copart offers the best in class global online auto remarketing platform for buyers and sellers.</p>
 			
-			<img src="content/copart-mission.png" style="display: block; width: 50%; margin: auto;">
+			<img src="content/copart-mission.png" style="display: block; width: 50%; margin: auto;" alt="copart-mission-vision-values" data-aos="zoom-in">
 			
 			<h2>Copart Facts</h2>
 			
@@ -719,7 +779,7 @@ Copart was named a Top Company on Deloitte’s “The Exceptional 100” list in
 		<p>Never, under any circumstances, should the logo artwork be altered or re-created. Only use the approved files when reproducing and applying the Copart logo.</p>
 			<p>Email <a href="mailto:advertising@copart.com">Advertising@Copart.com</a> to obtain the correct logo files. In your request, include the logo color (full color or black and white), file type required and intended application (digital, paper print, stitching, video, etc.).</p>
 			
-			<img src="content/logo-usage-1.svg">
+			<img src="content/logo-usage-1.svg" alt="logo" data-aos="zoom-in">
 			
 			<h2>Clear Space and Minimum Size</h2>
 			<p>The Copart logo should always be surrounded by a generous field of clear space to ensure its legibility and impact. This isolates the logo and protects it from competing with visual elements such as text and supporting graphics.</p>
@@ -728,20 +788,20 @@ Copart was named a Top Company on Deloitte’s “The Exceptional 100” list in
 			
 			<p>The Copart logo can be scaled to a variety of sizes. However, to ensure the logo is always legible, it should never be reproduced smaller than .5” in height.</p>
 			
-			<img src="content/logo-usage-2.svg">
-			<img src="content/logo-usage-3.svg" style="width: 20%; margin-top: 24px;">
+			<img src="content/logo-usage-2.svg" alt="logo" data-aos="zoom-in">
+			<img src="content/logo-usage-3.svg" style="width: 20%; margin-top: 24px;" alt="logo" data-aos="zoom-in">
 			
 			<h2>Logo Color Variations</h2>
 			<p>To accommodate a range of reproduction and printing requirements, two logo color variations are available for use.<br><br>
 
 Keep in mind that the full-color logo is always preferred for brand communications. However, the one-color black version should be used when color reproduction is limited. This variation is especially effective in media such as newsprint.</p>
-			<img src="content/logo-color-variations.png" style="width: 80%; margin-top: 80px; margin-bottom: 80px;">
+			<img src="content/logo-color-variations.png" style="width: 80%; margin-top: 80px; margin-bottom: 80px;" alt="logo-variations" data-aos="zoom-in">
 			<h2>Background Control</h2>
 			<p>The Copart logo should be highly legible in every application. As shown below, the logo and its variations can be positioned against a variety of backgrounds.<br><br>
 
 The full-color logo features well against white and black, as well as photographic backgrounds that provide significant contrast. The one-color variation also displays well against white and black and should be used in single-color print publications.</p>
 			
-			<img src="content/logo-background-control.png" style="width: 80%; margin-bottom: 80px; margin-top: 80px;">
+			<img src="content/logo-background-control.png" style="width: 80%; margin-bottom: 80px; margin-top: 80px;" alt="logo-background-control" data-aos="zoom-in">
 			
 			<h2>Logo Misuse</h2>
 			
@@ -754,7 +814,7 @@ Images and Logos: Do not use any logos or images within the email signature, oth
 
 Quotes: Refraining from the use of quotes or sayings is best practice for professional communications; it is important to avoid the potential confusion of external audiences assuming a particular statement represents Copart’s official slogan, ideology or brand promise.</p>
 			
-			<img src="content/logo-misuse.svg" style="width: 80%; margin-bottom: 80px; margin-top: 80px;">
+			<img src="content/logo-misuse.svg" style="width: 80%; margin-bottom: 80px; margin-top: 80px;" alt="logo-misuse" data-aos="zoom-in">
 		</div>
 		
 		<div id="color-palette">
@@ -769,7 +829,7 @@ The colors of the primary palette can be used for text, color fields and backgro
 
 Under no circumstance should the color red be used in any context with the Copart brand, unless identifying another brand such as CrashedToys or National Powersport Auctions (NPA).</p>
 			
-			<img src="content/color-palette.svg" style="width: 85%;">
+			<img src="content/color-palette.svg" style="width: 85%;" data-aos="zoom-in">
 			
 			<h3>PMS</h3>
 			<p>The Pantone® Matching System is a system of thousands of numbered swatches. Most corporate colors, in a logo for example, are identified with a number from this system.</p>
@@ -794,7 +854,7 @@ The Helvetica Neue font family is a highly legible sans serif made up of 51 font
 
 Because of this font’s variety of weights and styles, Helvetica Neue can be used for headlines, titles and primary messaging.</p>
 			
-			<img src="content/print-typo.svg" style="margin-top: 40px; margin-bottom: 40px; width: 45%;">
+			<img src="content/print-typo.svg" style="margin-top: 40px; margin-bottom: 40px; width: 45%;" alt="print-typo" data-aos="zoom-in">
 		</div>
 		
 		<div id="email-signature">
@@ -808,8 +868,8 @@ Refrain from editing the pre-populated signature. Additions such as inspirationa
 If the information or image on your signature is incorrect, email <a href="mailto:advertising@copart.com">Advertising@Copart.com</a> for assistance.</p>
 			
 			<div class="full-width">
-			<img src="content/email-sig.svg">
-			<img src="content/sig-example.svg">
+			<img src="/content/email-font.png" data-aos="zoom-in">
+			<img src="/content/email-ex-2.jpg" alt="email-signature-example" data-aos="zoom-in">
 			</div>
 			<div id="best-practices">
 	<h1>Best Practices</h1>
@@ -830,7 +890,7 @@ Reach out to Marketing for banner or signage requests (excluding external buildi
 Always use a Copart-approved PowerPoint template when creating presentations available on MyCopart.com &gt; Brand Guidelines, Logos and More.<br>
 Review the full Copy Style Guide at MyCopart.com &gt; Brand Guidelines, Logos and More.</p>
 			
-			<img src="content/best-practices.svg" style="width: 80%; margin-top: 40px; margin-bottom: 80px;">
+			<img src="/content/ppt-best-practices.png" style="width: 80%; margin-top: 40px; margin-bottom: 80px;" alt="powerpoint-best-practices" data-aos="zoom-in">
 		</div>
 		</div>
 	</div>
@@ -855,4 +915,7 @@ Review the full Copy Style Guide at MyCopart.com &gt; Brand Guidelines, Logos an
 </div>
 	
 </body>
+	<script>
+  AOS.init();
+</script>
 </html>

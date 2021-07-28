@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <title>Copart Brand</title>
 	<link rel="stylesheet" href="https://use.typekit.net/xvg8zof.css">
+
 	<style>
-	
-	/* VARIABLES */
+		/* VARIABLES */
 /* MAIN COLORS */
 /* SECONDARY COLORS */
 html {
@@ -45,7 +45,7 @@ p {
   font-family: Hind, sans-serif;
   font-size: 16px;
   line-height: 1.6em;
-  color: #ACBCCB; }
+  color: #687386; }
 
 a {
   color: #0D5DB8;
@@ -227,7 +227,8 @@ aside {
   .inside p {
     color: #687386;
     max-width: 85%;
-    font-weight: 300; }
+    font-weight: 300;
+    margin: 0; }
   .inside a {
     color: #0185FE;
     font-weight: 600;
@@ -249,10 +250,11 @@ aside {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
-  background-image: url("content/guidelines-hero-1.png");
+  background-image: url("https://design.copart.com/content/guidelines-hero-1.png");
   background-size: cover;
   height: 500px;
-  text-align: left; }
+  text-align: left;
+  margin-top: -10px; }
   .home-grid h1 {
     color: white;
     margin-left: 40px; }
@@ -482,7 +484,7 @@ aside {
 .logo-flex {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: start;
   align-content: center; }
 
@@ -495,7 +497,8 @@ aside {
   box-shadow: 0px 4px 11px 4px rgba(0, 0, 0, 0.15);
   margin: 16px;
   height: 100%;
-  max-width: 400px; }
+  max-width: 300px;
+  min-width: 300px; }
   .logo-download img {
     height: 112px;
     width: auto;
@@ -518,12 +521,17 @@ aside {
       background-color: #0185FE;
       padding: 12px;
       border-radius: 0 0 0 6px;
-      font-size: 16px; }
+      font-size: 16px;
+      transition-timing-function: ease-in-out;
+      transition-duration: .3s;
+      text-decoration: none; }
       .logo-download .flex .view button {
         background-color: #0185FE;
         color: white;
         border: none;
         font-weight: 500; }
+    .logo-download .flex .view:hover {
+      background-color: #4EAAFF; }
     .logo-download .flex .download-btn {
       flex: 1;
       color: white;
@@ -531,7 +539,12 @@ aside {
       background-color: #0D5DB8;
       padding: 12px;
       border-radius: 0 0 6px 0;
-      font-size: 16px; }
+      font-size: 16px;
+      text-decoration: none;
+      transition-timing-function: ease-in-out;
+      transition-duration: .3s; }
+    .logo-download .flex .download-btn:hover {
+      background-color: #0185FE; }
     .logo-download .flex .download-btn-full {
       flex: 1;
       color: white;
@@ -539,10 +552,38 @@ aside {
       background-color: #0D5DB8;
       padding: 12px;
       border-radius: 0 0 6px 6px;
-      font-size: 16px; }
+      font-size: 16px;
+      text-decoration: none;
+      transition-timing-function: ease-in-out;
+      transition-duration: .3s; }
+    .logo-download .flex .download-btn-full:hover {
+      background-color: #0185FE; }
     .logo-download .flex a {
       color: white;
-      vertical-align: middle; }
+      vertical-align: middle;
+      text-decoration: none; }
+
+#banner-sizes .flex {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px;
+  max-width: 800px;
+  width: 800px;
+  height: 40px;
+  border: 2px solid #ACBCCB;
+  border-radius: 6px; }
+  #banner-sizes .flex p {
+    min-width: 160px;
+    text-align: center; }
+#banner-sizes .label {
+  text-align: left; }
+#banner-sizes h1 {
+  text-align: left; }
+
+#web-logos {
+  text-align: left; }
 
 .logo-content {
   position: relative;
@@ -581,6 +622,9 @@ footer {
 .hidden {
   visibility: hidden; }
 
+.color-margin {
+  margin-top: -24px; }
+
 @media only screen and (max-width: 850px) {
   aside {
     display: none; }
@@ -589,7 +633,32 @@ footer {
     display: none; }
 
   .logo-download .flex {
-    height: auto; } }
+    height: auto; }
+
+  .type-flex {
+    flex-direction: column; }
+
+  .color-swatch {
+    height: 60px;
+    width: 60px; }
+    .color-swatch p {
+      display: none; }
+
+  .color-margin {
+    margin-top: 0; }
+
+  .color-swatch-section {
+    display: none; }
+
+  .color-ramps {
+    height: 60px;
+    width: 60px; }
+
+  .color-ramps-2 {
+    display: none; }
+
+  .type-example-flex {
+    max-width: 90%; } }
 @media only screen and (max-width: 600px) {
   .menu-grid {
     grid-template-columns: repeat(auto-fill, minmax(250px, 500px));
@@ -606,6 +675,11 @@ footer {
     grid-template-columns: repeat(auto-fill, minmax(250px, 500px));
     height: auto; }
 
+  #banner-sizes .flex {
+    flex-direction: column;
+    width: auto;
+    height: auto; }
+
   footer {
     grid-template-columns: repeat(auto-fill, minmax(250px, 500px));
     text-align: center;
@@ -617,7 +691,9 @@ footer {
     background-position: top; }
 
   .logo-flex {
-    flex-wrap: wrap; }
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start; }
 
   .hidden {
     display: none; }
@@ -636,33 +712,9 @@ footer {
   .three-image {
     display: none !important; }
 
-  .type-flex {
-    flex-direction: column; }
-
-  .color-swatch {
-    height: 60px;
-    width: 60px; }
-    .color-swatch p {
-      display: none; }
-
-  .color-swatch-section {
-    display: none; }
-
-  .color-ramps {
-    height: 60px;
-    width: 60px; }
-
-  .color-ramps-2 {
-    display: none; }
-
-  .type-example-flex {
-    max-width: 90%; }
-
   .inside {
     padding: 40px 0 24px 0; } }
-
-	
-	</style>
+</style>
 </head>
 
 <body>
@@ -680,18 +732,18 @@ footer {
 		<h2>Main Colors</h2>
 			
 		<div class="full-width">
-			<div class="color-swatch copart-blue">
+			<div class="color-swatch copart-blue" >
 			</div>
 			
-			<div class="color-swatch accent-blue">
+			<div class="color-swatch accent-blue" >
 			</div>
-			<div class="color-swatch background-blue">
+			<div class="color-swatch background-blue" >
 			</div>
-			<div class="color-swatch auction">
+			<div class="color-swatch auction" >
 			</div>
-			<div class="color-swatch caution">
+			<div class="color-swatch caution" >
 			</div>
-			<div class="color-swatch registration">
+			<div class="color-swatch registration" >
 			</div>
 			
 			</div>
@@ -735,27 +787,27 @@ footer {
 				
 		</div>
 			
-		<h2 style="margin-top: -24px;">Color Ramps</h2>	
+		<h2 class="color-margin">Color Ramps</h2>	
 		<div class="full-width">
-		<div class="color-ramps" style="background-color: #3A4352;">
+		<div class="color-ramps" style="background-color: #3A4352;" >
 			</div>
 		
-		<div class="color-ramps" style="background-color: #687386;">
+		<div class="color-ramps" style="background-color: #687386;" >
 			</div>
 			
-		<div class="color-ramps" style="background-color: #ACBCCB;">
+		<div class="color-ramps" style="background-color: #ACBCCB;" >
 			</div>
 			
-		<div class="color-ramps" style="background-color: #E2E9F1;">
+		<div class="color-ramps" style="background-color: #E2E9F1;" >
 			</div>
 			
-		<div class="color-ramps" style="background-color: #B7DEFF;">
+		<div class="color-ramps" style="background-color: #B7DEFF;" >
 			</div>
 		
-		<div class="color-ramps" style="background-color: #D2EAFF;">
+		<div class="color-ramps" style="background-color: #D2EAFF;" >
 			</div>
 			
-		<div class="color-ramps" style="background-color: #E5F3FE;">
+		<div class="color-ramps" style="background-color: #E5F3FE;" >
 			</div>
 			
 			</div>
@@ -791,27 +843,27 @@ footer {
 				
 		</div>
 			
-		<div class="full-width" style="margin-top: 24px; margin-bottom: 24px;">	
+		<div class="full-width" style="margin-top: 24px; margin-bottom: 24px;" >	
 			
-		<div class="color-ramps-2" style="background-color: #06335C; border-radius: 6px 0 0 6px; margin-left: 8px;">
+		<div class="color-ramps-2" style="background-color: #06335C; border-radius: 6px 0 0 6px; margin-left: 8px;" >
 			</div>
 			
-		<div class="color-ramps-2" style="background-color: #06427C;">
+		<div class="color-ramps-2" style="background-color: #06427C;" >
 			</div>
 			
-		<div class="color-ramps-2" style="background-color: #08509A;">
+		<div class="color-ramps-2" style="background-color: #08509A;" >
 			</div>
 			
-			<div class="color-ramps-2" style="background-color: #0C5DB8;">
+			<div class="color-ramps-2" style="background-color: #0C5DB8;" >
 			</div>
 			
-			<div class="color-ramps-2" style="background-color: #0066D5;">
+			<div class="color-ramps-2" style="background-color: #0066D5;" >
 			</div>
 			
-			<div class="color-ramps-2" style="background-color: #0174F1;">
+			<div class="color-ramps-2" style="background-color: #0174F1;" >
 			</div>
 			
-			<div class="color-ramps-2" style="background-color: #0185FE; border-radius: 0 6px 6px 0;">
+			<div class="color-ramps-2" style="background-color: #0185FE; border-radius: 0 6px 6px 0;" >
 			</div>
 			</div>
 			
@@ -979,4 +1031,5 @@ Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. D
 
 	
 </body>
+
 </html>

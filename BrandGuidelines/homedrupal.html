@@ -1,24 +1,7 @@
+<html lang="en">
 <head>
 <style>
-	.home-grid h1 {
-		text-align: left;
-	}	
-	
-	.home-grid h3 {
-		text-align: left;
-		max-width: 600px;
-		line-height: 1.8em;
-	}
-	
-	.highlights-grid div p {
-		text-align: left; 
-	}
-	
-	.home-grid a {
-		display: block;
-		width: 160px;
-	}
-/* VARIABLES */
+	/* VARIABLES */
 /* MAIN COLORS */
 /* SECONDARY COLORS */
 html {
@@ -57,7 +40,7 @@ p {
   font-family: Hind, sans-serif;
   font-size: 16px;
   line-height: 1.6em;
-  color: #ACBCCB; }
+  color: #687386; }
 
 a {
   color: #0D5DB8;
@@ -97,7 +80,7 @@ aside {
   width: 20vw;
   height: 100%;
   min-height: 100%;
-  background-color: #3A4352;
+  background-color: #0D5DB8;
   overflow: hidden;
   text-align: left; }
 
@@ -113,7 +96,7 @@ aside {
 .full-width {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   width: 100%;
   max-width: 100%; }
 
@@ -130,7 +113,8 @@ aside {
   align-items: baseline;
   justify-content: flex-start;
   max-width: 65%;
-  margin: auto; }
+  margin: auto;
+  margin-top: 80px; }
   .type-example-flex .item-left {
     flex: 1;
     order: 1; }
@@ -143,24 +127,24 @@ aside {
   .type-example-flex h1 {
     font-size: 32px;
     font-weight: 700;
-    font-family: usual, sans-serif; }
+    font-family: Open-sans, sans-serif; }
   .type-example-flex h2 {
     color: #3A4352;
     font-size: 24px;
-    font-family: usual, sans-serif;
+    font-family: Open-sans, sans-serif;
     font-weight: 600 !important; }
   .type-example-flex h3 {
-    font-family: usual, sans-serif;
+    font-family: Open-sans, sans-serif;
     color: #3A4352 !important;
     font-weight: 500;
     font-size: 16px; }
   .type-example-flex p {
-    font-family: hind, sans-serif;
+    font-family: Open-sans, sans-serif;
     font-size: 16px; }
   .type-example-flex ul {
     color: #3A4352; }
   .type-example-flex li {
-    font-family: hind, sans-serif;
+    font-family: Open-sans, sans-serif;
     color: #687386;
     line-height: 2em;
     font-size: 16px; }
@@ -204,7 +188,7 @@ aside {
   width: 20vw;
   height: 100%;
   min-height: 100%;
-  background-color: #3A4352;
+  background-color: #0D5DB8;
   padding-top: 160px;
   z-index: 3; }
   .links h2 {
@@ -238,7 +222,8 @@ aside {
   .inside p {
     color: #687386;
     max-width: 85%;
-    font-weight: 300; }
+    font-weight: 300;
+    margin: 0; }
   .inside a {
     color: #0185FE;
     font-weight: 600;
@@ -249,14 +234,22 @@ aside {
     width: 35%;
     margin: auto; }
 
+.three-image {
+  position: absolute;
+  right: 0;
+  width: 40%;
+  z-index: -1;
+  margin-top: -140px; }
+
 .home-grid {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
-  background-image: url("content/guidelines-hero-1.png");
+  background-image: url("https://design.copart.com/content/guidelines-hero-1.png");
   background-size: cover;
   height: 500px;
-  text-align: left; }
+  text-align: left;
+  margin-top: -10px; }
   .home-grid h1 {
     color: white;
     margin-left: 40px; }
@@ -379,15 +372,27 @@ aside {
   height: 120px;
   width: 120px;
   border-radius: 6px;
-  margin: 0 24px 0 0; }
+  margin: 12px 12px; }
   .color-swatch p {
+    font-size: 14px; }
+
+.color-ramp-name {
+  width: 112px;
+  margin-left: 12px; }
+  .color-ramp-name p {
+    font-size: 14px; }
+
+.color-ramp-name-two {
+  width: 72px;
+  margin-left: 8px; }
+  .color-ramp-name-two p {
     font-size: 14px; }
 
 .color-ramps {
   height: 100px;
   width: 100px;
   border-radius: 6px;
-  margin: 0 24px 0 0; }
+  margin: 12px 12px; }
 
 .color-ramps-2 {
   height: 80px;
@@ -404,13 +409,13 @@ aside {
   background-color: #B7DEFF; }
 
 .auction {
-  background-color: #3DB832; }
+  background-color: #18860E; }
 
 .caution {
-  background-color: #F8C500; }
+  background-color: #F2BB05; }
 
 .registration {
-  background-color: #F25800; }
+  background-color: #CC5A00; }
 
 .typo-section {
   display: flex;
@@ -420,19 +425,19 @@ aside {
   align-items: flex-end;
   justify-content: space-between; }
   .typo-section .u-bold {
-    font-family: usual, sans-serif;
+    font-family: Open-sans, sans-serif;
     font-weight: 700;
     font-style: normal; }
   .typo-section .u-medium {
-    font-family: usual, sans-serif;
+    font-family: Open-sans, sans-serif;
     font-weight: 600;
     font-style: normal; }
   .typo-section .u-regular {
-    font-family: usual, sans-serif;
+    font-family: Open-sans, sans-serif;
     font-weight: 400;
     font-style: normal; }
   .typo-section .u-light {
-    font-family: usual, sans-serif;
+    font-family: Open-sans, sans-serif;
     font-weight: 300;
     font-style: normal; }
   .typo-section .h-bold {
@@ -474,7 +479,7 @@ aside {
 .logo-flex {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: start;
   align-content: center; }
 
@@ -487,7 +492,8 @@ aside {
   box-shadow: 0px 4px 11px 4px rgba(0, 0, 0, 0.15);
   margin: 16px;
   height: 100%;
-  max-width: 400px; }
+  max-width: 300px;
+  min-width: 300px; }
   .logo-download img {
     height: 112px;
     width: auto;
@@ -510,12 +516,17 @@ aside {
       background-color: #0185FE;
       padding: 12px;
       border-radius: 0 0 0 6px;
-      font-size: 16px; }
+      font-size: 16px;
+      transition-timing-function: ease-in-out;
+      transition-duration: .3s;
+      text-decoration: none; }
       .logo-download .flex .view button {
         background-color: #0185FE;
         color: white;
         border: none;
         font-weight: 500; }
+    .logo-download .flex .view:hover {
+      background-color: #4EAAFF; }
     .logo-download .flex .download-btn {
       flex: 1;
       color: white;
@@ -523,7 +534,12 @@ aside {
       background-color: #0D5DB8;
       padding: 12px;
       border-radius: 0 0 6px 0;
-      font-size: 16px; }
+      font-size: 16px;
+      text-decoration: none;
+      transition-timing-function: ease-in-out;
+      transition-duration: .3s; }
+    .logo-download .flex .download-btn:hover {
+      background-color: #0185FE; }
     .logo-download .flex .download-btn-full {
       flex: 1;
       color: white;
@@ -531,10 +547,38 @@ aside {
       background-color: #0D5DB8;
       padding: 12px;
       border-radius: 0 0 6px 6px;
-      font-size: 16px; }
+      font-size: 16px;
+      text-decoration: none;
+      transition-timing-function: ease-in-out;
+      transition-duration: .3s; }
+    .logo-download .flex .download-btn-full:hover {
+      background-color: #0185FE; }
     .logo-download .flex a {
       color: white;
-      vertical-align: middle; }
+      vertical-align: middle;
+      text-decoration: none; }
+
+#banner-sizes .flex {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px;
+  max-width: 800px;
+  width: 800px;
+  height: 40px;
+  border: 2px solid #ACBCCB;
+  border-radius: 6px; }
+  #banner-sizes .flex p {
+    min-width: 160px;
+    text-align: center; }
+#banner-sizes .label {
+  text-align: left; }
+#banner-sizes h1 {
+  text-align: left; }
+
+#web-logos {
+  text-align: left; }
 
 .logo-content {
   position: relative;
@@ -598,6 +642,11 @@ footer {
     grid-template-columns: repeat(auto-fill, minmax(250px, 500px));
     height: auto; }
 
+  #banner-sizes .flex {
+    flex-direction: column;
+    width: auto;
+    height: auto; }
+
   footer {
     grid-template-columns: repeat(auto-fill, minmax(250px, 500px));
     text-align: center;
@@ -609,7 +658,9 @@ footer {
     background-position: top; }
 
   .logo-flex {
-    flex-wrap: wrap; }
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start; }
 
   .hidden {
     display: none; }
@@ -619,11 +670,41 @@ footer {
 @media only screen and (max-width: 420px) {
   .home-grid h1, .home-grid h3 {
     margin-left: 24px;
-    width: 90%; } }
+    width: 90%; }
 
+  .inside p {
+    max-width: 95% !important;
+    width: 95% !important; }
 
+  .three-image {
+    display: none !important; }
 
-</style>
+  .type-flex {
+    flex-direction: column; }
+
+  .color-swatch {
+    height: 60px;
+    width: 60px; }
+    .color-swatch p {
+      display: none; }
+
+  .color-swatch-section {
+    display: none; }
+
+  .color-ramps {
+    height: 60px;
+    width: 60px; }
+
+  .color-ramps-2 {
+    display: none; }
+
+  .type-example-flex {
+    max-width: 90%; }
+
+  .inside {
+    padding: 40px 0 24px 0; } }
+
+	</style>
 </head>	
 
 	
@@ -633,7 +714,7 @@ footer {
 		<h1>Copart Brand and Design Style Guide</h1>
 		<h3>Our brand guidelines are the tools we use to create our story, live up to our expectations and reinforce the experiences Members and Sellers have with Copart. This guide is the manual for looking, speaking and acting like Copart.</h3>
 		<div>	
-		<a href="/content/copart-brandguidelines.pdf" download>Download Brand Guidelines</a>
+		<a href="/content/copart-brandguidelines-2020.pdf" download>Download Brand Guidelines</a>
 			</div>
 		</div>
 	</div>
@@ -641,20 +722,20 @@ footer {
 	
 	<div class="sections-grid">
 	<div class="brand">
-		<img src="content/copart-c.svg">
+		<img src="content/copart-c.svg" alt="brand">
 		<h1>Brand</h1>
-		<h3><a href="/brand">Explore<img src="content/arrow-right.svg" style="width: 8%; vertical-align: middle; margin-left: 8px;"></a></h3>
+		<h3><a href="/brand">Explore<img src="content/arrow-right.svg" style="width: 8%; vertical-align: middle; margin-left: 8px;" alt="arrow"></a></h3>
 		</div>
 	<div class="design">
-		<img src="content/programming-browser.svg">
+		<img src="content/programming-browser.svg" alt="web-design">
 		<h1>Web Design</h1>
-		<h3><a href="/web-design">Explore<img src="content/arrow-right.svg" style="width: 8%; vertical-align: middle; margin-left: 8px;"></a></h3>
+		<h3><a href="/web-design">Explore<img src="content/arrow-right.svg" style="width: 8%; vertical-align: middle; margin-left: 8px;" alt="arrow"></a></h3>
 		</div>
 		
 	<div class="resources">
-		<img src="content/design-tool-fibonacci.svg" class="quill">
+		<img src="content/design-tool-fibonacci.svg" class="quill" alt="resources">
 		<h1>Resources</h1>
-		<h3><a href="/resources">Explore<img src="content/arrow-right.svg" style="width: 8%; vertical-align: middle; margin-left: 8px;"></a></h3>
+		<h3><a href="/resources">Explore<img src="content/arrow-right.svg" style="width: 8%; vertical-align: middle; margin-left: 8px;" alt="arrow"></a></h3>
 		</div>
 	</div>
 	
@@ -662,32 +743,32 @@ footer {
 	
 	<div class="highlights-grid">
 		<div>
-		<object data="content/layer-2.svg" type="image/svg+xml"></object>
+		<object data="content/layer-2.svg" type="image/svg+xml" alt="logo-usage"></object>
 		<h2>Logo Usage</h2>
 		<p>We are very proud of our logo, and we require that you follow these guidelines to ensure it always looks its best.</p>
 			<p><a href="/brand#logo">Learn More</a></p>
 		</div>
 		
 		<div>
-			<object data="content/color-palette-3.svg" type="image/svg+xml"></object>
+			<object data="content/color-palette-3.svg" type="image/svg+xml" alt="copart-colors"></object>
 		<h2>Our Colors</h2>
 		<p>Using color appropriately is one of the easiest ways to make sure our materials reflect a cohesive Copart brand.</p>
 			<p><a href="/brand#color-palette">Print</a><a href="/web-design#web-colors" style="margin-left: 40px;">Web</a></p>
 		</div>
 		
 		<div>
-			<object data="content/content-quill-pen.svg" type="image/svg+xml"></object>
+			<object data="content/content-quill-pen.svg" type="image/svg+xml" alt="typography"></object>
 		<h2>Typography</h2>
 		<p>Typography, when used thoughtfully, is another powerful brand tool to add visual meaning to what is communicated.</p>
 			<p><a href="/web-design#web-typography-section">Learn More</a></p>
 		</div>
 		
 		<div class="design-system">
-			<object data="content/design-tool-quill-1.svg" type="image/svg+xml"></object>
+			<object data="content/design-tool-quill-1.svg" type="image/svg+xml" alt="downloads"></object>
 		<h2>Downloads</h2>
 			<p>Looking for something? Access all of Copart's Brand Resources and download them in one place.</p>
 			<p><a href="/resources">Learn More</a></p>
 		</div>
 	</div>
-	
+	</html>
 	

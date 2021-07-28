@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="guidelines.css">
 	
 <style>
-	
 	/* VARIABLES */
 /* MAIN COLORS */
 /* SECONDARY COLORS */
@@ -47,7 +46,7 @@ p {
   font-family: Hind, sans-serif;
   font-size: 16px;
   line-height: 1.6em;
-  color: #ACBCCB; }
+  color: #687386; }
 
 a {
   color: #0D5DB8;
@@ -252,7 +251,7 @@ aside {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
-  background-image: url("content/guidelines-hero-1.png");
+  background-image: url("https://design.copart.com/content/guidelines-hero-1.png");
   background-size: cover;
   height: 500px;
   text-align: left; }
@@ -485,7 +484,7 @@ aside {
 .logo-flex {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: start;
   align-content: center; }
 
@@ -498,7 +497,8 @@ aside {
   box-shadow: 0px 4px 11px 4px rgba(0, 0, 0, 0.15);
   margin: 16px;
   height: 100%;
-  max-width: 400px; }
+  max-width: 300px;
+  min-width: 300px; }
   .logo-download img {
     height: 112px;
     width: auto;
@@ -521,12 +521,17 @@ aside {
       background-color: #0185FE;
       padding: 12px;
       border-radius: 0 0 0 6px;
-      font-size: 16px; }
+      font-size: 16px;
+      transition-timing-function: ease-in-out;
+      transition-duration: .3s;
+      text-decoration: none; }
       .logo-download .flex .view button {
         background-color: #0185FE;
         color: white;
         border: none;
         font-weight: 500; }
+    .logo-download .flex .view:hover {
+      background-color: #4EAAFF; }
     .logo-download .flex .download-btn {
       flex: 1;
       color: white;
@@ -534,7 +539,12 @@ aside {
       background-color: #0D5DB8;
       padding: 12px;
       border-radius: 0 0 6px 0;
-      font-size: 16px; }
+      font-size: 16px;
+      text-decoration: none;
+      transition-timing-function: ease-in-out;
+      transition-duration: .3s; }
+    .logo-download .flex .download-btn:hover {
+      background-color: #0185FE; }
     .logo-download .flex .download-btn-full {
       flex: 1;
       color: white;
@@ -542,10 +552,16 @@ aside {
       background-color: #0D5DB8;
       padding: 12px;
       border-radius: 0 0 6px 6px;
-      font-size: 16px; }
+      font-size: 16px;
+      text-decoration: none;
+      transition-timing-function: ease-in-out;
+      transition-duration: .3s; }
+    .logo-download .flex .download-btn-full:hover {
+      background-color: #0185FE; }
     .logo-download .flex a {
       color: white;
-      vertical-align: middle; }
+      vertical-align: middle;
+      text-decoration: none; }
 
 #banner-sizes .flex {
   display: flex;
@@ -553,12 +569,18 @@ aside {
   justify-content: space-between;
   align-items: center;
   margin: 16px;
-  padding: 0 24px;
   max-width: 800px;
   width: 800px;
   height: 40px;
   border: 2px solid #ACBCCB;
   border-radius: 6px; }
+  #banner-sizes .flex p {
+    min-width: 160px;
+    text-align: center; }
+#banner-sizes .label {
+  text-align: left; }
+#banner-sizes h1 {
+  text-align: left; }
 
 #web-logos {
   text-align: left; }
@@ -625,6 +647,11 @@ footer {
     grid-template-columns: repeat(auto-fill, minmax(250px, 500px));
     height: auto; }
 
+  #banner-sizes .flex {
+    flex-direction: column;
+    width: auto;
+    height: auto; }
+
   footer {
     grid-template-columns: repeat(auto-fill, minmax(250px, 500px));
     text-align: center;
@@ -636,7 +663,9 @@ footer {
     background-position: top; }
 
   .logo-flex {
-    flex-wrap: wrap; }
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start; }
 
   .hidden {
     display: none; }
@@ -680,16 +709,13 @@ footer {
   .inside {
     padding: 40px 0 24px 0; } }
 
-	
 	</style>
-</head>
-
 <body>
 	
 	<div class="wrapper">
 
 		<article>
-	<div class="inside">
+			<div class="inside">
 		<div id="introresources">
 	<h1>Resources</h1>
 		<div class="logo-flex">
@@ -697,7 +723,7 @@ footer {
 			<h2>Brand Guidelines</h2>
 			<img src="content/copart-logo-1.svg" alt="copart-logo">
 			<div class="flex">
-			<a class="download-btn-full" href="/content/copart-brandguidelines.pdf" download>Download PDF</a>
+			<a class="download-btn-full" href="/content/copart-brandguidelines-2020.pdf" download>Download PDF</a>
 		</div>
 	</div>
 
@@ -705,18 +731,47 @@ footer {
 			<h2>Banner Size and Location Guide</h2>
 			<img src="content/banner-size-guide.png" alt="web-banner-size-guide">
 			<div class="flex">
-			<a class="download-btn-full" href="/content/resources-common-banner-sizes.pdf" download>Download PDF</a>
+			<a class="download-btn-full" href="/content/common-banner-sizes-09-20.pdf" download="common-banner-sizes">Download PDF</a>
 		</div>
 	</div>
-		
-		<div class="logo-download">
+				<div class="logo-download">
 			<h2>Web Templates</h2>
 			<img src="content/web-template-icon.svg" alt="web-templates">
 			<div class="flex">
-			<a class="download-btn-full" href="content/web-design-templates.pdf" download>Download PDF</a>
+			<a class="download-btn-full" href="/content/copart-content-web-templates.pdf" download>Download PDF</a>
 		</div>
 	</div>
-			</div>
+			
+					<div class="logo-download">
+			<h2>Copy Style Guide</h2>
+			<img src="content/brand-voice-guide_0.svg" alt="copy-style-guide">
+			<div class="flex">
+			<a class="download-btn-full" href="/content/copart-copy-style-guide.pdf" download>Download PDF</a>
+		</div>
+	</div>
+			
+	<div class="logo-download">
+			<h2>Powerpoint Templates</h2>
+			<img src="content/powerpoint-icon.svg" alt="powerpoint-templates">
+			<div class="flex">
+			<a class="view" href="https://coparto365.sharepoint.com/:p:/r/Marketing/Marketing%20Documents/UX/Powerpoint%20Templates/copart-template-letter-2020.pptx?download1">Letter</a>
+			<a class="download-btn" href="https://coparto365.sharepoint.com/:p:/r/Marketing/Marketing%20Documents/UX/Powerpoint%20Templates/copart-template-widescreen-2020.pptx?download1">Widescreen</a>
+				
+		</div>
+	</div>
+			<!--
+			<div class="logo-download">
+			<h2>Powerpoint Templates</h2>
+			<img src="content/powerpoint-icon.svg" alt="powerpoint-templates">
+			<div class="flex">
+			<a class="view" href="/pptlettertemplate" target="_blank" rel="noopener">Letter</a>
+			<a class="download-btn" href="/pptwidescreentemplate" target="_blank" rel="noopener">Widescreen</a>
+		</div>
+	</div>
+-->
+		
+			
+</div>
 		
 		</div>
 		<div id="file-types">
@@ -726,6 +781,7 @@ footer {
 		<ul>
 		<li>CMYK &mdash; (Cyan, Magenta, Yellow, Black) Use this file type for <strong>Print Projects</strong></li>
 		<li>RGB &mdash; (Red, Green, Blue) Use this file type for <strong>Web Projects</strong></li>
+		<li>Pantone Matching System &mdash; (PMS): Pantone colors are codes that stand for a specific color to maintain color consistency.</li>
 		</ul>
 		<h3>About File Types</h3>
 		<ul>
@@ -735,7 +791,115 @@ footer {
 		</ul>
 		</div>
 		
-		<div id="banner-sizes">
+		<div id="web-logos">
+		<h1>Web Logos</h1>
+		<h3>Web Logo Best Practices:</h3>
+		<p>When possible, the Copart Logo should be used in its full-color form. On the web, the SVG format is preferable to ensure crisp lines and avoid pixelation. For digital graphics, transparent PNG files should be used. Should a white background be present, a PNG or JPG file can be used.  </p>
+			
+			<div class="logo-flex">
+		<div class="logo-download">
+			<h2>JPG</h2>
+			<img src="content/copart-logo-1.svg" alt="copart-logo-jpg">
+			<div class="flex">
+				<div class="view">
+			<a href="/content/copart-logo.jpg" download>Normal</a>
+				</div>
+			<a class="download-btn" href="/content/copart-logo-rgb-large.jpg" download>Large</a>
+		</div>
+	</div>
+		
+		<div class="logo-download">
+			<h2>PNG</h2>
+			<img src="content/copart-logo-1.svg" alt="copart-logo-png">
+			<div class="flex">
+			<a class="download-btn-full" href="/content/copart-logo-rgb.png" download>Download</a>
+		</div>
+	</div>
+		
+		<div class="logo-download">
+				<h2>SVG</h2>
+			<img src="content/copart-logo-1.svg" alt="copart-logo-svg">
+			<div class="flex">
+			<a class="download-btn-full" href="/content/copart-logo.svg" download>Download</a>
+	</div>
+		
+		</div>
+			
+		</div>
+		
+		<div id="print-logos">
+		<h1>Print Logos</h1>
+			
+			<div class="logo-flex">
+		<div class="logo-download">
+			<h2>CMYK</h2>
+			<img src="content/copart-logo-1.svg" alt="copart-logo-cymk">
+			<div class="flex">
+			<a class="download-btn-full" href="https://coparto365.sharepoint.com/:u:/r/Marketing/Marketing%20Documents/UX/Logo%20Files/Copart-Logo-CMYK.eps?download1" download>Download</a>
+		</div>
+	</div>
+				
+					<div class="logo-download">
+			<h2>PMS</h2>
+			<img src="content/copart-logo-1.svg" alt="copart-logo-pms">
+			<div class="flex">
+			<a class="download-btn-full" href="https://coparto365.sharepoint.com/:u:/r/Marketing/Marketing%20Documents/UX/Logo%20Files/Copart-Logo-PMS.eps?download1" download>Download</a>
+		</div>
+	</div>
+		
+		<div class="logo-download hidden">
+	</div>
+		
+		<div class="logo-download hidden">
+	</div>
+		
+		</div>
+			
+		</div>
+		
+		<div id="black-white">
+		<h1>Black and White Logos</h1>
+		<p>The full-color logo is always preferred for brand communications. However, the one-color black version should be used when color reproduction is limited. This variation is especially effective in media such as newsprint.</p>
+			
+			<div class="logo-flex">
+		<div class="logo-download">
+			<h2>PNG</h2>
+			<img src="content/logo-usage-4.svg" alt="logo-usage">
+			<div class="flex">
+			<a class="download-btn-full" href="/content/copart-logo-black.png" download>Download</a>
+		</div>
+	</div>
+		
+		<div class="logo-download">
+			<h2>JPG</h2>
+			<img src="content/logo-usage-4.svg" alt="logo-usage">
+			<div class="flex">
+			<a class="download-btn-full" href="/content/copart-logo-bw.jpg" download>Download</a>
+		</div>
+	</div>
+				
+					<div class="logo-download">
+			<h2>PNG</h2>
+			<img src="content/copart-logo-bw-simple.png" alt="logo-black-white">
+			<div class="flex">
+			<a class="download-btn-full" href="/content/copart-logo-bw-simple.png" download>Download</a>
+		</div>
+	</div>
+				
+			<div class="logo-download" style="background-color: black;">
+			<h2>PNG</h2>
+			<img src="/content/copart-logo-white-simple.png" alt="logo-black-white">
+			<div class="flex">
+			<a class="download-btn-full" href="/content/copart-logo-white-simple.png" download>Download</a>
+		</div>
+	</div>
+		
+		
+      </div>
+			
+			</div>	
+			</div>
+				<div id="banner-sizes">
 		<h1>Banner Size and Location Guide</h1>
 		
 			<div class="flex" style="color: #0C5DB8;">
@@ -744,7 +908,7 @@ footer {
 			<p><strong>SIZE</strong></p>
 			</div>	
 			
-			<p><strong>Website</strong></p>
+			<p class="label"><strong>Website</strong></p>
 			
 			<div class="flex">
 			<p>Dashboard</p>
@@ -817,7 +981,7 @@ footer {
 			<p><strong>370 x 600</strong></p>
 			</div>
 		
-		<p><strong>Social Media</strong></p>
+		<p class="label"><strong>Social Media</strong></p>
 			
 		<div class="flex">
 			<p>Blog</p>
@@ -897,7 +1061,7 @@ footer {
 			<p><strong>1024 x 512</strong></p>
 			</div>
 			
-		<p><strong>Email</strong></p>
+		<p class="label"><strong>Email</strong></p>
 			
 		<div class="flex">
 			<p>Email - External</p>
@@ -908,13 +1072,7 @@ footer {
 		<div class="flex">
 			<p>Email - External</p>
 			<p>Mobile Header/Footer</p>
-			<p><strong>640 x 180</strong></p>
-			</div>
-			
-		<div class="flex">
-			<p>Email - External</p>
-			<p>Mobile Header/Footer</p>
-			<p><strong>640 x 180</strong></p>
+			<p><strong>480 x 180</strong></p>
 			</div>
 			
 		<div class="flex">
@@ -923,7 +1081,7 @@ footer {
 			<p><strong>600 x 175</strong></p>
 			</div>
 			
-		<p><strong>Newsletter Etc.</strong></p>
+		<p class="label"><strong>Newsletter Etc.</strong></p>
 			
 		<div class="flex">
 			<p>Newsletter</p>
@@ -950,100 +1108,7 @@ footer {
 			</div>
 			
 		</div>
-		
-		<div id="web-logos">
-		<h1>Web Logos</h1>
-		<h3>Web Logo Best Practices:</h3>
-		<p>When possible, the Copart Logo should be used in its full-color form. On the web, the SVG format is preferable to ensure crisp lines and avoid pixelation. For digital graphics, transparent PNG files should be used. Should a white background be present, a PNG or JPG file can be used.  </p>
-			
-			<div class="logo-flex">
-		<div class="logo-download">
-			<h2>JPG</h2>
-			<img src="content/copart-logo-1.svg" alt="copart-logo-jpg">
-			<div class="flex">
-				<div class="view">
-			<a href="/content/copart-logo.jpg" download>Normal</a>
 				</div>
-			<a class="download-btn" href="/content/copart-logo-rgb-large.jpg" download>Large</a>
-		</div>
-	</div>
-		
-		<div class="logo-download">
-			<h2>PNG</h2>
-			<img src="content/copart-logo-1.svg" alt="copart-logo-png">
-			<div class="flex">
-			<a class="download-btn-full" href="/content/copart-logo-rgb.png" download>Download</a>
-		</div>
-	</div>
-		
-		<div class="logo-download">
-				<h2>SVG</h2>
-			<img src="content/copart-logo-1.svg" alt="copart-logo-svg">
-			<div class="flex">
-			<a class="download-btn-full" href="/content/copart-logo.svg" download>Download</a>
-	</div>
-		
-		</div>
-			
-		</div>
-		
-		<div id="print-logos">
-		<h1>Print Logos</h1>
-			
-			<div class="logo-flex">
-		<div class="logo-download">
-			<h2>CMYK</h2>
-			<img src="content/copart-logo-1.svg" alt="copart-logo-cymk">
-			<div class="flex">
-			<a class="download-btn-full" href="/content/copart-logo-cmyk.jpg" download>Download</a>
-		</div>
-	</div>
-		
-		<div class="logo-download hidden">
-	</div>
-		
-		<div class="logo-download hidden">
-	</div>
-		
-		</div>
-			
-		</div>
-		
-		<div id="black-white">
-		<h1>Black and White Logos</h1>
-		<p>The full-color logo is always preferred for brand communications. However, the one-color black version should be used when color reproduction is limited. This variation is especially effective in media such as newsprint.</p>
-			
-			<div class="logo-flex">
-		<div class="logo-download">
-			<h2>PNG</h2>
-			<img src="content/logo-usage-4.svg" alt="logo-usage">
-			<div class="flex">
-			<a class="download-btn-full" href="/content/copart-logo-black.png" download>Download</a>
-		</div>
-	</div>
-		
-		<div class="logo-download">
-			<h2>JPG</h2>
-			<img src="content/logo-usage-4.svg" alt="logo-usage">
-			<div class="flex">
-			<a class="download-btn-full" href="/content/copart-logo-bw.jpg" download>Download</a>
-		</div>
-	</div>
-				
-					<div class="logo-download">
-			<h2>PNG</h2>
-			<img src="content/copart-logo-bw-simple.png" alt="logo-black-white">
-			<div class="flex">
-			<a class="download-btn-full" href="/content/copart-logo-bw-simple.png" download>Download</a>
-		</div>
-	</div>
-		
-		
-		
-		</div>
-			
-		</div>
-			</div>
   </article> 
 		
 		<!-- SIDEBAR LINKS -->
@@ -1059,6 +1124,6 @@ footer {
 		</div>
 			</aside>
 			
-			</div>
+			
 </body>
 </html>
